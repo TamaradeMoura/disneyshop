@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+section > .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-image: url(./imagens/orelhas.png), url(./imagens/kart.png) ;
+    background-size: contain, 50px;
+    background-repeat: no-repeat;
+    background-position: 300px, 1470px;
+}
+
+header {
+    background-color: #2ec9f8 ;
+    color: #fff;
+    padding: 16px 0;
+}
+
+nav {
+    padding: 16px 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+#sobre-a-loja h2,
+p {
+    padding-left: 25px;
+    margin-bottom: 16px;
+}
+
+#sobre-a-loja h2 {
+    text-decoration: underline;
+}
+
+#sobre-a-loja {
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+#sobre-a-loja img {
+    height: 300px;
+}
+
+#produtos img {
+    max-width: 150px;
+}
+
+#produtos h2 {
+    padding-left: 25px;
+    text-decoration: underline;
+}
+
+.lista-produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.lista-produtos li {
+    list-style: none;
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding: 16px auto;
+}
+
+.lista-produtos h3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.lista-produtos p {
+    padding-left: 0;
+    text-align: left;
+}
+
+.yoda {
+    height: 132px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+    color: #000000;
+}
+
+.price:hover {
+    color: #f50000;
+}
+
+button {
+    display: block;
+    padding: 10px 10px;
+    border: none;
+    background-color: #187ff5;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(12, 236, 79);
+}
+
+@media screen and (max-width: 640px){
+    .container {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    header > .container {
+        display: block;
+    }
+
+    header {
+        padding: 8px 0;
+    }
+
+    header {
+        background-image: url(./imagens/orelhas.png);
+        background-size: 120px;
+        background-repeat: no-repeat;
+        background-position: 260px 0;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    #sobre-a-loja h2,
+p {
+    padding-left: 0;
+    margin-bottom: 16px;
+    padding-top: 20px;
+}
+
+
+    #sobre-a-loja {
+        align-items: flex-start;
+        padding-top: 16px;
+}
+
+    #sobre-a-loja img {
+    height: 200px;
+    max-width: 90%;
+}
+
+    #produtos h2 {
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+    .lista-produtos {
+        display: block;
+        padding-top: 10px;
+        padding-left: 16px;
+}
+
+    .lista-produtos li {
+        max-width: 90%;
+        margin-bottom: 16px;
+        padding: 0;
+}
+
+    .lista-produtos h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+.lista-produtos p {
+    padding-left: 0;
+
+}
+
+#produtos img {
+    max-width: 200px;
+}
+
+.price {
+    margin: 16px 0;
+}
+
+.yoda {
+    height: 202px;
+}
+
+
+button {
+    display: block;
+    padding: 10px 10px;
+}
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    header > .container {
+        display: block;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    header {
+        background-image: url(./imagens/orelhas.png);
+        background-size: 120px;
+        background-repeat: no-repeat;
+        background-position: 350px 50px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    section {
+        padding-left: 16px;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    #sobre-a-loja h2,
+p {
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+#sobre-a-loja h2 {
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+#sobre-a-loja p {
+    font-size: 1.5em;
+}
+
+
+    #sobre-a-loja {
+        align-items: center;
+        padding-top: 25px;
+}
+
+    #sobre-a-loja img {
+    height: 300px;
+    max-width: 90%;
+}
+
+    #produtos h2 {
+    padding: 0 auto;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+    .lista-produtos {
+        padding: 0 auto;
+}
+
+    .lista-produtos li {
+        max-width: 90%;
+        margin-bottom: 16px;
+        padding: 0;
+}
+
+    .lista-produtos h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 2em;
+}
+
+.lista-produtos p {
+    padding-left: 0;
+    font-size: 1.5em;
+}
+
+#produtos img {
+    max-width: 250px;
+}
+
+.price {
+    margin: 16px 0;
+    font-size: 1.5em;
+}
+
+.yoda {
+    height: 230px;
+}
+
+.mickey {
+    height: 280px;
+}
+
+
+button {
+    display:  block;
+    padding: auto;
+    font-size: 1em;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
